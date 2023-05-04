@@ -9,8 +9,11 @@ namespace Codewars
     public static class Kata
     {
         public static void Main(string[] args)
-        {   
-            Console.WriteLine(string.Join(", ", CountBy(2, 5)));
+        {
+            //Console.WriteLine(string.Join(", ", CountBy(2, 5)));
+
+            int number;
+            Display(number);
 
             Console.ReadLine();
         }
@@ -26,16 +29,21 @@ namespace Codewars
 
         // -------------------- ANSWER 1 -------------------- 
 
-        public static int[] CountBy(int x, int n)
+        //public static int[] CountBy(int x, int n)
+        //{
+        //    int[] z = new int[n];
+
+        //    for (int i = 0; i < n; i++)
+        //    {
+        //        z[i] = (i + 1) * x;
+        //    }
+
+        //    return z;
+        //}
+
+        static void Display(int num=10)
         {
-            int[] z = new int[n];
-
-            for (int i = 0; i < n; i++)
-            {
-                z[i] = (i + 1) * x;
-            }
-
-            return z;
+            Console.WriteLine(num);
         }
 
 
